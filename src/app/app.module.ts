@@ -13,11 +13,13 @@ import { QuoteComponent } from './quote/quote.component';
     DetailsComponent,
     FormComponent,
     QuoteComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    DetailsComponent,
+    FormsModule
+    
+    
     
   ],
   providers: [],
