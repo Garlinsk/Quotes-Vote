@@ -8,9 +8,9 @@ import {Quote} from '../quote';
 export class QuoteComponent implements OnInit {
   quotes=[new Quote("ANC","Julius Malema","Mama give us a sign"),
 new Quote("Lupita","Black Panther","Wakanda Forever")]
-  preNum:number
-  lastNum:number
-  counter:number
+  preNum!:number
+  lastNum!:number
+  counter!:number
 
   addQuote(emittedQuote){
     this.quotes.push(emittedQuote)
