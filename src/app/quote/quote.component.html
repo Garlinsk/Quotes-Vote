@@ -1,6 +1,6 @@
-<!-- <p>quote works!</p> -->
-<div class="container-fluid" >
-    <h1><QUOTES-VOTE</h1>
+<!-- <p>quote works!</p>
+<!-- <div class="container-fluid" >
+    <h1></h1>
     
   </div>
 
@@ -15,10 +15,10 @@
           <p  *ngIf="highestUpvote()!==quote.upvotes || quote.upvotes===0">{{quote.quote}}</p>
           <app-details [quote]="quote"></app-details>
 
-          <!-- <hr size="50"> -->
+          <hr size="50"> -->
 
 
-          <button class="btn btn-primary" (click)="upvote(i)">Upvote</button>
+<!-- <button class="btn btn-primary" (click)="upvote(i)">Upvote</button>
           <button class="btn" (click)="downvote(i)">Downvote</button>
           <button class="btn btn-danger" (click)="delQuote(i)">Delete</button>
 
@@ -27,5 +27,89 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
+
+<!-- <div class="container">
+  <h1>QUOTES</h1>
+  <!-- <img src="assets/images/like-dislike.png"> -->
+<!-- </div>
+
+<app-form (emitQuote)="addQuote($event)"></app-form>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10">
+      <hr>
+      <div class="myQuote" *ngFor="let quote of quotes; let i=index">
+        <p appHighlight *ngIf="highestUpvote()===quote.upvotes && quote.upvotes>0">{{quote.quote}}</p>
+        <p *ngIf="highestUpvote()!==quote.upvotes || quote.upvotes===0">{{quote.quote}}</p>
+        <div class="container-fluid">
+          <h1>QUOTES</h1>
+          <!-- <img src="assets/images/like-dislike.png"> -->
+<!-- </div>
+
+        <app-form (emitQuote)="addQuote($event)"></app-form>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10">
+              <hr>
+              <div class="myQuote" *ngFor="let quote of quotes; let i=index">
+                <p appHighlight *ngIf="highestUpvote()===quote.upvotes && quote.upvotes>0">{{quote.quote}}</p>
+                <p *ngIf="highestUpvote()!==quote.upvotes || quote.upvotes===0">{{quote.quote}}</p>
+                <app-details [quote]="quote"></app-details>
+
+                <!-- <hr size="50"> -->
+
+
+<!-- <button class="btn btn-primary" (click)="upvote(i)">Upvote</button>
+                <button class="btn" (click)="downvote(i)">Downvote</button>
+                <button class="btn btn-danger" (click)="delQuote(i)">Delete</button>
+
+                <hr>
+
+              </div>
+            </div>
+          </div> -->
+<!-- </div>details [quote]="quote"></app-details> -->
+
+<!-- <hr size="50"> -->
+
+
+<!-- <button class="btn btn-primary" (click)="upvote(i)">Upvote</button>
+          <button class="btn" (click)="downvote(i)">Downvote</button>
+          <button class="btn btn-danger" (click)="delQuote(i)">Delete</button>
+
+          <hr>
+
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+<div class="container">
+
+  <h1>My Quotes</h1>
+
+  <hr>
+  <div class="row">
+    <div class="col-md-6">
+      <div *ngFor='let quote of quotes;let i = index' class="quote">
+        <div>
+          <h4>{{quote.words}}</h4>
+        </div>
+        <div>
+          <app-details [quote]="quote"></app-details>
+          by <span id="name"><strong>{{quote.name}}</strong></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <!-- <app-quote-form (add)="addedQuote($event)"></app-quote-form> -->
+      <app-form ></app-form>
+
+    </div>
+  </div>
+</div>

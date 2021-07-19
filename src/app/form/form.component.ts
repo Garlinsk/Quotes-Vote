@@ -9,19 +9,20 @@ import { Quote } from '../quote';
 
 
 export class FormComponent implements OnInit {
-  @Output() emitQuote = new EventEmitter()
-  quoteStr: string
-  quotePublisher: string
-  quoteAuthor: string
-  theQuote: any
+  newQuote = new Quote("","","",0 ,0,new Date());
+  // @Output() emitQuote = new EventEmitter()
+  // quoteStr: string
+  // quotePublisher: string
+  // quoteAuthor: string
+  // theQuote: any
 
-  submitQuote() {
-    this.theQuote = new Quote(this.quotePublisher, this.quoteAuthor, this.quoteStr)
-    this.quoteStr = ''
-    this.quoteAuthor = ''
-    this.quotePublisher = ''
-    this.emitQuote.emit(this.theQuote)
-  }
+  // submitQuote() {
+  //   this.theQuote = new Quote(this.quotePublisher, this.quoteAuthor, this.quoteStr)
+  //   this.quoteStr = ''
+  //   this.quoteAuthor = ''
+  //   this.quotePublisher = ''
+  //   this.emitQuote.emit(this.theQuote)
+  // }
 
   
 
