@@ -60,7 +60,7 @@ Cloning
 
 Live Demo
 
-To view the page click here: QUOTES
+To view the page click here: Quotes-vote
 
 Technology Used
 
