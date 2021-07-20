@@ -13,8 +13,11 @@ export class QuoteComponent implements OnInit {
   // lastNum: number
   // counter: number
 
-  addQuote(emittedQuote) {
-    this.quotes.push(emittedQuote)
+  addNewQuote(quote) {
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    quote.newDate = new Date(quote.newDate);
+    this.quotes.push(quote)
   }
 
   upvote(i) {

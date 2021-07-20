@@ -8,12 +8,11 @@ export class Quote {
     public upvotes: number,
     public downvotes: number,
     public myDate: Date) {
-    this.upvotes = 0
-    this.downvotes = 0
-    this.myDate = new Date()
-    {
       this.showDescription=false;
     }
+    // this.upvotes = 0
+    // this.downvotes = 0
+    // this.myDate = new Date()
 
-  }
+  
 }

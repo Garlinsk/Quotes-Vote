@@ -10,6 +10,7 @@ import { QuoteComponent } from './quote/quote.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
