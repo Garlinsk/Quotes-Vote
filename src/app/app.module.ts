@@ -8,6 +8,8 @@ import { DetailsComponent } from './details/details.component';
 import { FormComponent } from './form/form.component';
 import { QuoteComponent } from './quote/quote.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,

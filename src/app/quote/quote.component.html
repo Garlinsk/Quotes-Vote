@@ -96,7 +96,8 @@
   <hr>
   <div class="row">
     <div class="col-md-6">
-      <div *ngFor='let quote of quotes;let i = index' class="quote">
+      <div  class="myQuote"*ngFor='let quote of quotes;let i = index' class="quote">
+         
         <div>
           <h4>{{quote.words}}</h4>
 
@@ -109,6 +110,8 @@
             <button class="btn btn-primary" (click)="upvote(i)">Upvote</button><button class="btn"
               (click)="downvote(i)">Downvote</button></span><br>
           <button class="btn btn-danger" (click)="delQuote(i)">Delete</button>
+
+          
 
         </div>
       </div>
@@ -131,6 +134,8 @@
         <!-- <hr> -->
         <!-- <app-quote-form (add)="addedQuote($event)"></app-quote-form> -->
         <app-form></app-form>
+        
+
 
       </div>
     </div>
