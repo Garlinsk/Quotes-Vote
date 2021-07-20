@@ -1,13 +1,13 @@
-.myQuote{
+.QUOTES-VOTE{
     padding: 15px;
   }
   
-  .container-fluid{
+  .container{
     /* padding: 1px; */
-    text-align: center;
-    background-color: blue;
+    text-align: ;
+    background-color: rgb(255, 196, 0);
     font-family: 'Times New Roman', Times, serif;
-    font-size: 70px;
+    font-size: 20px;
   }
   
   /* .line
